@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+input, button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#connection-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
