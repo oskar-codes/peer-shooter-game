@@ -10,14 +10,14 @@
     
     <div id="app">
 
-      <div id="connection-panel" v-show="false"> <!-- !connection -->
+      <div id="connection-panel" v-show="!connection">
         <p v-if="id">Your id is <code>{{id}}</code></p>
         <input type="text" placeholder="Other player ID" id="peer-input">
         <button id="connect">Connect</button>
       </div>
 
       <!-- <canvas v-show="!!connection"></canvas> -->
-      <canvas></canvas>
+      <canvas v-show="!!connection"></canvas>
 
     </div>
 
